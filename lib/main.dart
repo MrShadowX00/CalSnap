@@ -14,6 +14,7 @@ import 'screens/coach_screen.dart';
 import 'screens/log_screen.dart';
 import 'screens/profile_screen.dart';
 import 'screens/pro_paywall_screen.dart';
+import 'screens/insights_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -42,6 +43,7 @@ class CalSnapApp extends StatelessWidget {
       '/scan':       (_) => const ScanScreen(),
       '/coach':      (_) => const MainShell(initialIndex: 2),
       '/pro':        (_) => const ProPaywallScreen(),
+      '/insights':   (_) => const InsightsScreen(),
     },
   );
 }

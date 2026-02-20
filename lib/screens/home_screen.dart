@@ -12,6 +12,7 @@ import 'package:intl/intl.dart';
 import '../theme/app_theme.dart';
 import '../models/food_entry.dart';
 import '../widgets/water_tracker_widget.dart';
+import '../widgets/insights_widget.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -220,6 +221,14 @@ class _HomeScreenState extends State<HomeScreen> {
                   SliverToBoxAdapter(child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 24),
                     child: const WaterTrackerWidget(),
+                  )),
+
+                  const SliverToBoxAdapter(child: Gap(16)),
+
+                  // Smart Insights
+                  SliverToBoxAdapter(child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 24),
+                    child: const InsightsWidget(),
                   )),
 
                   const SliverToBoxAdapter(child: Gap(20)),
