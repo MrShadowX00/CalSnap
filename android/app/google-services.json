@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "885294130047",
+    "project_id": "calsnap-app-2025",
+    "storage_bucket": "calsnap-app-2025.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885294130047:android:6024c3925bd913ff05b04a",
+        "android_client_info": {
+          "package_name": "com.mrkhojaev.calsnap"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrVmHkcHyt0lqC_d_O_dJLTTvKLILlUtg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
