@@ -11,6 +11,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:intl/intl.dart';
 import '../theme/app_theme.dart';
 import '../models/food_entry.dart';
+import '../widgets/water_tracker_widget.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -211,6 +212,14 @@ class _HomeScreenState extends State<HomeScreen> {
                       const Gap(10),
                       _MacroCard('🧈', 'Yog\'', '${totalFat.toStringAsFixed(0)}g', const Color(0xFFEF4444)),
                     ]).animate().fadeIn(delay: 300.ms),
+                  )),
+
+                  const SliverToBoxAdapter(child: Gap(16)),
+
+                  // Water Tracker
+                  SliverToBoxAdapter(child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 24),
+                    child: const WaterTrackerWidget(),
                   )),
 
                   const SliverToBoxAdapter(child: Gap(20)),
